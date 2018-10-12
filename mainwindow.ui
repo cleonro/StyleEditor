@@ -37,6 +37,7 @@
     <property name="title">
      <string>&amp;Window</string>
     </property>
+    <addaction name="actionS_tyle_Dialog"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Window"/>
@@ -93,6 +94,11 @@
    </property>
    <property name="text">
     <string>Right</string>
+   </property>
+  </action>
+  <action name="actionS_tyle_Dialog">
+   <property name="text">
+    <string>S&amp;tyle Dialog</string>
    </property>
   </action>
  </widget>

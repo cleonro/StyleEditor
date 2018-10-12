@@ -6,6 +6,7 @@
 namespace Ui {
 class MainWindow;
 }
+class StyleDialog;
 
 class MainWindow : public QMainWindow
 {
@@ -18,8 +19,11 @@ public:
 private slots:
     void on_action_Quit_triggered();
 
+    void on_actionS_tyle_Dialog_triggered();
+
 private:
     Ui::MainWindow *ui;
+    StyleDialog *m_styleDialog;
 };
 
 #endif // MAINWINDOW_H
