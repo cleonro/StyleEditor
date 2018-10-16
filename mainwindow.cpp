@@ -74,3 +74,8 @@ void MainWindow::onFileModified(const QString &filePath)
 
     qDebug() << Q_FUNC_INFO << m_fileSystemModel->files();
 }
+
+void MainWindow::on_action_New_triggered()
+{
+    qApp->setStyleSheet("");
+}

@@ -27,6 +27,8 @@ private slots:
 
     void onFileModified(const QString& filePath);
 
+    void on_action_New_triggered();
+
 private:
     Ui::MainWindow *ui;
     StyleDialog *m_styleDialog;
