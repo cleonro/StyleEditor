@@ -7,6 +7,8 @@ namespace Ui {
 class MainWindow;
 }
 class StyleDialog;
+class QFileDialog;
+class QFileSystemWatcher;
 
 class MainWindow : public QMainWindow
 {
@@ -21,9 +23,15 @@ private slots:
 
     void on_actionS_tyle_Dialog_triggered();
 
+    void on_action_Load_triggered();
+
+    void onFileModified(const QString& filePath);
+
 private:
     Ui::MainWindow *ui;
     StyleDialog *m_styleDialog;
+    QFileDialog *m_fileDialog;
+    QFileSystemWatcher *m_fileSystemModel;
 };
 
 #endif // MAINWINDOW_H

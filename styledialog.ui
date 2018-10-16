@@ -54,6 +54,11 @@
            <height>0</height>
           </size>
          </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QColorDialog" name="color" native="true"/>
+          </item>
+         </layout>
         </widget>
        </widget>
       </item>
@@ -62,6 +67,14 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QColorDialog</class>
+   <extends>QWidget</extends>
+   <header>QColorDialog</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
