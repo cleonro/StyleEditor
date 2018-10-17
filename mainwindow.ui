@@ -351,8 +351,9 @@
     </property>
     <addaction name="action_New"/>
     <addaction name="action_Load"/>
-    <addaction name="action_Save"/>
+    <addaction name="separator"/>
     <addaction name="actionS_ave_As"/>
+    <addaction name="action_Save"/>
     <addaction name="action_Quit"/>
    </widget>
    <widget class="QMenu" name="menu_Window">

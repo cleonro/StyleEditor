@@ -16,7 +16,7 @@ QWidget
 QWidget:item:hover
 {
     background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(105, 129, 231, 255), stop: 1 rgba(4, 23, 104, 255));
-    color: rgba(0, 0, 0, 255);
+    color: rgba(0, 0, 20, 255);
 }
 
 QWidget:item:selected
@@ -38,7 +38,7 @@ QMenuBar::item:selected
 QMenuBar::item:pressed
 {
     background: rgb(68, 68, 88);
-    border: 1px solid rgba(0, 0, 0, 255);
+    border: 1px solid rgba(0, 0, 20, 255);
     background-color: qlineargradient(spread:pad,
         x1:0, y1:0,
         x2:0, y2:1,
@@ -53,7 +53,7 @@ QMenuBar::item:pressed
 
 QMenu
 {
-    border: 1px solid rgba(0, 0, 0, 255);
+    border: 1px solid rgba(0, 0, 20, 255);
 }
 
 QMenu::item
@@ -63,12 +63,12 @@ QMenu::item
 
 QMenu::item:selected
 {
-    color: rgba(0, 0, 0, 255);
+    color: rgba(0, 0, 20, 255);
 }
 
 QWidget:disabled
 {
-    color: rgba(64, 64, 64, 255);
+    color: rgba(64, 64, 84, 255);
     background-color: rgba(50, 53, 74, 255);
 }
 
@@ -94,7 +94,7 @@ QLineEdit
 QPushButton, QToolButton
 {
     color: rgb(177, 177, 197);
-    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 106, 255), stop: 0.1 rgba(82, 82, 102, 255), stop: 0.5 rgba(78, 78, 98, 255), stop: 0.9 rgba(74, 74, 94, 255), stop: 1 rgba(70, 70, 90, 255));
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(56, 56, 76, 255), stop: 0.1 rgba(52, 52, 72, 255), stop: 0.5 rgba(48, 48, 68, 255), stop: 0.9 rgba(44, 44, 64, 255), stop: 1 rgba(40, 40, 70, 255));
     border-width: 0px;
     border-color: rgba(30, 30, 50, 255);
     border-style: solid;
@@ -116,7 +116,7 @@ QComboBox
     background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 106, 255), stop: 0.1 rgba(82, 82, 102, 255), stop: 0.5 rgba(78, 78, 98, 255), stop: 0.9 rgba(74, 74, 94, 255), stop: 1 rgba(70, 70, 90, 255));
     border-style: solid;
     border: 1px solid rgba(30, 30, 50, 255);
-    border-radius: 5;
+    border-radius: 3px;
 }
 
 QComboBox:hover,QPushButton:hover, QToolButton:hover
@@ -145,8 +145,10 @@ QComboBox::drop-down
      subcontrol-position: top right;
      width: 15px;
 
+     border-radius:7px;
+     
      border-left-width: 0px;
-     border-left-color: darkgray;
+     border-left-color: blue;
      border-left-style: solid; /* just a single line */
      border-top-right-radius: 3px; /* same radius as the QComboBox */
      border-bottom-right-radius: 3px;
@@ -273,10 +275,10 @@ QPlainTextEdit
 
 QHeaderView::section
 {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(97, 97, 97, 255), stop: 0.5 rgba(80, 80, 80, 255), stop: 0.6 rgba(67, 67, 67, 255), stop:1 rgba(101, 101, 101, 255));
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(97, 97, 117, 255), stop: 0.5 rgba(80, 80, 100, 255), stop: 0.6 rgba(67, 67, 87, 255), stop:1 rgba(101, 101, 121, 255));
     color: white;
     padding-left: 4px;
-    border: 1px solid rgb(108, 108, 108);
+    border: 1px solid rgb(108, 108, 128);
 }
 
 QDockWidget::title
@@ -305,10 +307,10 @@ QDockWidget::close-button:pressed, QDockWidget::float-button:pressed
 
 QMainWindow::separator
 {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(22, 22, 22, 255), stop: 0.5 rgba(21, 21, 21, 255), stop: 0.6 rgba(33, 33, 33, 255), stop:1 rgba(52, 52, 52, 255));
-    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(22, 22, 42, 255), stop: 0.5 rgba(21, 21, 41, 255), stop: 0.6 rgba(33, 33, 43, 255), stop:1 rgba(52, 52, 72, 255));
+    color: blue;
     padding-left: 4px;
-    border: 1px solid rgba(76, 76, 76, 255);
+    border: 1px solid rgba(76, 76, 96, 255);
     spacing: 3px; /* spacing between items in the tool bar */
 }
 
@@ -318,9 +320,9 @@ QMainWindow::separator:hover
     background-color: 
         /*qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(73, 135, 215, 255), stop:0.5 rgba(181, 108, 23, 255) stop:1 rgba(50, 69, 194, 255));*/
         qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(50, 69, 194, 255), stop: 0.5 rgba(73, 135, 215, 255), stop: 1 rgba(50, 69, 194, 255));
-    color: white;
+    color: blue;
     padding-left: 4px;
-    border: 1px solid rgb(108, 108, 108);
+    border: 1px solid rgb(108, 108, 128);
     spacing: 3px; /* spacing between items in the tool bar */
 }
 
@@ -333,8 +335,8 @@ QToolBar::handle
 QMenu::separator
 {
     height: 2px;
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(22, 22, 22, 255), stop: 0.5 rgba(21, 21, 21, 255), stop: 0.6 rgba(33, 33, 33, 255), stop:1 rgba(52, 52, 52, 255));
-    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(22, 22, 42, 255), stop: 0.5 rgba(21, 21, 41, 255), stop: 0.6 rgba(33, 33, 43, 255), stop:1 rgba(52, 52, 72, 255));
+    color: blue;
     padding-left: 4px;
     margin-left: 10px;
     margin-right: 5px;
@@ -342,7 +344,7 @@ QMenu::separator
 
 QProgressBar
 {
-    border: 2px solid grey;
+    border: 2px solid blue;
     border-radius: 5px;
     text-align: center;
 }
@@ -356,7 +358,7 @@ QProgressBar::chunk
 
 QTabBar::tab {
     color: rgba(177, 177, 197, 255);
-    border: 1px solid rgb(68, 68, 68, 255);
+    border: 1px solid rgb(68, 68, 88, 255);
     border-bottom-style: none;
     background-color: rgba(50, 53, 64, 255);
     padding-left: 10px;
@@ -406,14 +408,14 @@ QTabBar::tab:!selected:hover
     padding-bottom: 3px;*/
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:1 rgba(33, 33, 33, 255), stop:0.4 rgba(52, 52, 52, 255), stop:0.2 rgba(52, 52, 52, 255), stop:0.1 rgba(59, 109, 227, 255));
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:1 rgba(33, 33, 53, 255), stop:0.4 rgba(52, 52, 72, 255), stop:0.2 rgba(52, 52, 72, 255), stop:0.1 rgba(59, 109, 227, 255));
 }
 
 QRadioButton::indicator:checked, QRadioButton::indicator:unchecked{
-    color: rgba(177, 177, 177, 255);
+    color: rgba(177, 177, 197, 255);
     background-color: rgba(50, 53, 64, 255);
-    border: 1px solid rgba(177, 177, 177, 255);
-    border-radius: 6px;
+    border: 1px solid rgba(177, 177, 197, 255);
+    border-radius: 5px;
 }
 
 QRadioButton::indicator:checked
@@ -439,29 +441,29 @@ QRadioButton::indicator:hover, QCheckBox::indicator:hover
 
 QCheckBox:disabled
 {
-    color: rgba(65, 65, 65, 255);
+    color: rgba(65, 65, 85, 255);
 }
 
-QCheckBox::indicator
+QCheckBox::indicator, QAbstractItemView::indicator
 {
-    color: rgba(177, 177, 177, 255);
+    color: rgba(177, 177, 197, 255);
     background-color: rgba(50, 53, 64, 255);
-    border: 1px solid rgba(177, 177, 177, 255);
+    border: 1px solid rgba(177, 177, 197, 255);
     width: 9px;
     height: 9px;
 }
 
-QCheckBox::indicator:checked
+QCheckBox::indicator:checked, QAbstractItemView::indicator:checked
 {
     image:url(:/StyleSheet/checkbox.png);
 }
 
 QCheckBox::indicator:indeterminate
 {
-    background-color: rgba(177, 177, 177, 255);
+    background-color: rgba(177, 177, 197, 255);
 }
 
-QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QAbstractItemView::indicator:disabled
 {
-    border: 1px solid rgba(68, 68, 68, 255);
+    border: 1px solid rgba(68, 68, 88, 255);
 }
