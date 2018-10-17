@@ -5,6 +5,7 @@
 #include <styledialog.h>
 #include <QFileDialog>
 #include <QFileSystemWatcher>
+#include <QStandardItemModel>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -17,6 +18,27 @@ MainWindow::MainWindow(QWidget *parent) :
     m_fileSystemModel = new QFileSystemWatcher(this);
 
     connect(m_fileSystemModel, &QFileSystemWatcher::fileChanged, this, &MainWindow::onFileModified);
+
+    m_model = new QStandardItemModel(this);
+
+    for(int i = 0; i < 4; ++i)
+    {
+        QList<QStandardItem*> row;
+        QStandardItem *check = new QStandardItem("CH");
+        check->setCheckable(true);
+        row << new QStandardItem("A") << new QStandardItem("B") << check;
+        m_model->appendRow(row);
+    }
+    QStandardItem *it = new QStandardItem("CS");
+    QList<QStandardItem*> row;
+    QStandardItem *check = new QStandardItem("CH");
+    check->setCheckable(true);
+    row << new QStandardItem("A") << new QStandardItem("B") << check;
+    it->appendRow(row);
+    m_model->appendRow(it);
+    ui->treeView->setModel(m_model);
+    ui->listView->setModel(m_model);
+    ui->tableView->setModel(m_model);
 }
 
 MainWindow::~MainWindow()

@@ -235,7 +235,34 @@
            </layout>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox"/>
+           <widget class="QComboBox" name="comboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text">
+              <string>ADD</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BCD</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DFG</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ASD</string>
+             </property>
+            </item>
+           </widget>
           </item>
           <item>
            <widget class="QFontComboBox" name="fontComboBox"/>
@@ -288,8 +315,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>100</width>
-             <height>30</height>
+             <width>98</width>
+             <height>28</height>
             </rect>
            </property>
            <attribute name="label">
@@ -487,6 +514,60 @@
               <string notr="true">1</string>
              </property>
             </column>
+            <column>
+             <property name="text">
+              <string>B</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>3</string>
+             </property>
+            </column>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+             <property name="text">
+              <string>a</string>
+             </property>
+             <property name="text">
+              <string>a</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>v</string>
+             </property>
+             <property name="text">
+              <string>g</string>
+             </property>
+             <property name="text">
+              <string>h</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>a</string>
+             </property>
+             <property name="text">
+              <string>c</string>
+             </property>
+             <property name="text">
+              <string>b</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>d</string>
+              </property>
+              <property name="text">
+               <string>g</string>
+              </property>
+              <property name="text">
+               <string>x</string>
+              </property>
+             </item>
+            </item>
            </widget>
           </item>
          </layout>

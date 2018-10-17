@@ -94,11 +94,11 @@ QLineEdit
 QPushButton, QToolButton
 {
     color: rgb(177, 177, 197);
-    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 106, 255), stop: 0.1 rgba(82, 82, 102, 255), stop: 0.5 rgba(78, 78, 78, 255), stop: 0.9 rgba(74, 74, 94, 255), stop: 1 rgba(70, 70, 90, 255));
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 106, 255), stop: 0.1 rgba(82, 82, 102, 255), stop: 0.5 rgba(78, 78, 98, 255), stop: 0.9 rgba(74, 74, 94, 255), stop: 1 rgba(70, 70, 90, 255));
     border-width: 0px;
     border-color: rgba(30, 30, 50, 255);
     border-style: solid;
-    border-radius: 7;
+    border-radius: 3;
     padding: 3px;
     font-size: 12px;
     padding-left: 5px;
@@ -107,15 +107,15 @@ QPushButton, QToolButton
 
 QPushButton:pressed, QToolButton:pressed
 {
-    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(45, 45, 45, 255), stop: 0.1 rgba(43, 43, 43, 255), stop: 0.5 rgba(41, 41, 41, 255), stop: 0.9 rgba(40, 40, 40, 255), stop: 1 rgba(37, 37, 37, 255));
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(45, 45, 65, 255), stop: 0.1 rgba(43, 43, 63, 255), stop: 0.5 rgba(41, 41, 61, 255), stop: 0.9 rgba(40, 40, 60, 255), stop: 1 rgba(37, 37, 57, 255));
 }
 
 QComboBox
 {
     selection-background-color: rgba(59, 109, 227, 255);
-    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 86, 255), stop: 0.1 rgba(82, 82, 82, 255), stop: 0.5 rgba(78, 78, 78, 255), stop: 0.9 rgba(74, 74, 74, 255), stop: 1 rgba(70, 70, 70, 255));
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(86, 86, 106, 255), stop: 0.1 rgba(82, 82, 102, 255), stop: 0.5 rgba(78, 78, 98, 255), stop: 0.9 rgba(74, 74, 94, 255), stop: 1 rgba(70, 70, 90, 255));
     border-style: solid;
-    border: 1px solid rgba(30, 30, 30, 255);
+    border: 1px solid rgba(30, 30, 50, 255);
     border-radius: 5;
 }
 
@@ -129,7 +129,7 @@ QComboBox:on
 {
     padding-top: 3px;
     padding-left: 4px;
-    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(45, 45, 45, 255), stop: 0.1 rgba(43, 43, 43, 255), stop: 0.5 rgba(41, 41, 41, 255), stop: 0.9 rgba(40, 40, 40, 255), stop: 1 rgba(37, 37, 37, 255));
+    background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(45, 45, 65, 255), stop: 0.1 rgba(43, 43, 63, 255), stop: 0.5 rgba(41, 41, 61, 255), stop: 0.9 rgba(40, 40, 60, 255), stop: 1 rgba(37, 37, 57, 255));
     selection-background-color: rgba(59, 109, 227, 255);
 }
 
@@ -168,9 +168,9 @@ QTextEdit:focus
 }
 
 QScrollBar:horizontal {
-     border: 1px solid rgba(34, 34, 34, 255);
-     background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(18, 18, 18, 255), stop: 0.2 rgba(40, 40, 40, 255), stop: 1 rgba(72, 72, 72, 255));
-     height: 7px;
+     border: 1px solid rgba(34, 34, 54, 255);
+     background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(18, 18, 38, 255), stop: 0.2 rgba(40, 40, 60, 255), stop: 1 rgba(72, 72, 92, 255));
+     height: 8px;
      margin: 0px 16px 0 16px;
 }
 
@@ -191,7 +191,7 @@ QScrollBar::add-line:horizontal {
 }
 
 QScrollBar::sub-line:horizontal {
-      border: 1px solid rgba(27, 27, 25, 255);
+      border: 1px solid rgba(27, 27, 45, 255);
       border-radius: 2px;
       background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 rgba(50, 69, 194, 255), stop: 1 rgba(73, 135, 215, 255));
       width: 14px;
@@ -201,7 +201,7 @@ QScrollBar::sub-line:horizontal {
 
 QScrollBar::right-arrow:horizontal, QScrollBar::left-arrow:horizontal
 {
-      border: 1px solid black;
+      border: 1px solid blue;
       width: 1px;
       height: 1px;
       background: white;
@@ -214,10 +214,10 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 
 QScrollBar:vertical
 {
-      background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1, y2: 0, stop: 0.0 rgba(18, 18, 18, 255), stop: 0.2 rgba(40, 40, 40, 255), stop: 1 rgba(72, 72, 72, 255));
+      background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1, y2: 0, stop: 0.0 rgba(18, 18, 38, 255), stop: 0.2 rgba(40, 40, 60, 255), stop: 1 rgba(72, 72, 92, 255));
       width: 8px;
       margin: 16px 0 16px 0;
-      border: 1px solid rgba(34, 34, 34, 255);
+      border: 1px solid rgba(34, 34, 54, 255);
 }
 
 QScrollBar::handle:vertical
@@ -229,7 +229,7 @@ QScrollBar::handle:vertical
 
 QScrollBar::add-line:vertical
 {
-      border: 1px solid rgba(27, 27, 25, 255);
+      border: 1px solid rgba(27, 27, 45, 255);
       border-radius: 2px;
       background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(50, 69, 194, 255), stop: 1 rgba(73, 135, 215, 255));
       height: 14px;
@@ -239,7 +239,7 @@ QScrollBar::add-line:vertical
 
 QScrollBar::sub-line:vertical
 {
-      border: 1px solid rgba(27, 27, 25, 255);
+      border: 1px solid rgba(27, 27, 45, 255);
       border-radius: 2px;
       background: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(73, 135, 215, 255), stop: 1 rgba(50, 69, 194, 255));
       height: 14px;
@@ -249,7 +249,7 @@ QScrollBar::sub-line:vertical
 
 QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
 {
-      border: 1px solid black;
+      border: 1px solid blue;
       width: 1px;
       height: 1px;
       background: white;

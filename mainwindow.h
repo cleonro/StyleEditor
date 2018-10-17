@@ -9,6 +9,7 @@ class MainWindow;
 class StyleDialog;
 class QFileDialog;
 class QFileSystemWatcher;
+class QStandardItemModel;
 
 class MainWindow : public QMainWindow
 {
@@ -34,6 +35,6 @@ private:
     StyleDialog *m_styleDialog;
     QFileDialog *m_fileDialog;
     QFileSystemWatcher *m_fileSystemModel;
+    QStandardItemModel *m_model;
 };
-
 #endif // MAINWINDOW_H
